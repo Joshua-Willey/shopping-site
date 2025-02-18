@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { getAllOrdersOfUser } from "../../redux/actions/order";
 
 const TrackOrder = () => {
+  var count = 3;
   const { orders } = useSelector((state) => state.order);
   const { user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
